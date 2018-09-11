@@ -6,7 +6,6 @@ public class sueldoSemanal{
     double HT = input.nextDouble();
     System.out.println("¿Cual es su pago por Hora?");
     double PH = input.nextDouble();
-    //Cant. de galones que produce
     double SS = HT * PH;
       System.out.println("Su sueldo semanal es:" + SS);
   }

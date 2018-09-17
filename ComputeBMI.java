@@ -13,7 +13,20 @@ public class ComputeBMI{
     double height = input.nextDouble();
     double weightIntKilograms = weight * KILOGRAMS_PER_POUND;
     double heightIntMeters = height * METERS_PER_INCH;
-    double ibm = weightIntKilograms / (heightIntMeters * heightIntMeters);
-    System.out.println("\nYour BMI is: "+ ibm);
+    //double bmi = weightIntKilograms / (heightIntMeters * heightIntMeters);
+    double bmi = weightIntKilograms / Math.pow(heightIntMeters, 2);
+    System.out.println("Your BMI is: " + bmi);
+    if (bmi < 16)
+      System.out.println("\nYour are seriously underweight");
+    else if (bmi < 18 )
+      System.out.println("\nYour are underweight");
+      else if (bmi < 24 )
+        System.out.println("\nYour are normal weight");
+        else if (bmi < 29 )
+          System.out.println("\nYour are overweight");
+          else if (bmi < 35)
+            System.out.println("\nYour are seriously overweight");
+            else
+              System.out.println("\nYour are gravely overweight");
   }
 }

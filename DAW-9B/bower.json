@@ -1,0 +1,22 @@
+{
+  "name": "my first bootstrap project",
+  "authors": [
+    "Ari-98 <i-samar98@hotmail.es>"
+  ],
+  "description": "Bootstarp framework",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "fontawesome": "^5.8.2"
+  }
+}

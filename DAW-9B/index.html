@@ -18,20 +18,23 @@
        <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
            <span class="navbar-toggler-icon"></span>
        </button>
+
        <!-- div>div.navbar-bar>a.nav-item.nav-link*4 -->
         <div class="collapse navbar-collapse" id="menu">
             <div class="navbar-nav">
                 <a href="#" class="nav-item nav-link active"> Home</a>
-                <a href="#" class="nav-item nav-link"> Service</a>
+                <a href="#" class="nav-item nav-link" id="services"> Services</a>
                 <a href="#" class="nav-item nav-link">Contact</a>
                 <a href="#" class="nav-item nav-link disabled">About</a>
             </div>
         </div>
     </nav>
+
     <div class="container">
         <div class="col-md-12 text-center">
             <h1 >Up and Running With Bootstrap</h1>
         </div>
+
         <div class="row">
             <div class="carousel slide" data-ride="carousel" id="mycarousel">
                 <ol class="carousel-indicators">
@@ -62,6 +65,7 @@
                             </div>
                     </div>
                 </div>
+
                 <a href="#mycarousel" class="carousel-control-prev" data-slide="prev">
                     <span class="carousel-control-prev-icon"></span>
                 </a>
@@ -69,7 +73,22 @@
                         <span class="carousel-control-next-icon"></span>
                     </a>
             </div>
+            <script>
+                $('carrousel') = document();
+                var hammertime = new Hammer();
+                var carElement = document.getElementById("mycarousel");
+       
+                hammertime.on('swipeleft', function(ev) {
+                   console.log(ev);
+                   carElement.classList.remove("carousel-control-prev-icon");
+                   });
+                   hammertime.on('swiperight', function(ev) {
+                   console.log(ev);
+                   carElement.classList.add("carousel-control-next-icon");
+                   });
+               </script>
         </div>
+
         <div class="row">
             <div class="col-md-5">
                 <h2>The fastest Way to Bootstrap</h2>
@@ -142,5 +161,36 @@
     </div>
         <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="bower_components/hammerjs/hammer.js"></script>
+        <script>
+            var $body = document.body;
+            
+            var hammertime = new Hammer($body);
+            var navElement = document.getElementById("services");
+            var boElement = document.getElementById("menu");
+           
+
+            hammertime.on('swipeleft', function(ev) {
+	        console.log(ev);
+            navElement.classList.remove("active");
+            });
+            hammertime.on('swiperight', function(ev) {
+	        console.log(ev);
+            navElement.classList.add("active");
+            });
+
+            hammertime.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
+            
+            hammertime.on('swipeup', function(ev) {
+	        console.log(ev);
+            boElement.classList.add("collapse");
+            });
+            hammertime.on('swipedown', function(ev) {
+	        console.log(ev);
+            boElement.classList.remove("collapse");
+            });
+        </script>
+        
+       
 </body>
 </html>

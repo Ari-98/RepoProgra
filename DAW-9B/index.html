@@ -73,20 +73,6 @@
                         <span class="carousel-control-next-icon"></span>
                     </a>
             </div>
-            <script>
-                $('carrousel') = document();
-                var hammertime = new Hammer();
-                var carElement = document.getElementById("mycarousel");
-       
-                hammertime.on('swipeleft', function(ev) {
-                   console.log(ev);
-                   carElement.classList.remove("carousel-control-prev-icon");
-                   });
-                   hammertime.on('swiperight', function(ev) {
-                   console.log(ev);
-                   carElement.classList.add("carousel-control-next-icon");
-                   });
-               </script>
         </div>
 
         <div class="row">
@@ -190,6 +176,21 @@
             boElement.classList.remove("collapse");
             });
         </script>
+
+<script>
+    var $ol = document.ol;
+    var hammertime = new Hammer($ol);
+    var carElement = document.getElementById("mycarousel");
+
+    hammertime.on('swipeleft', function(ev) {
+       console.log(ev);
+       carElement.classList.remove("carousel");
+       });
+       hammertime.on('swiperight', function(ev) {
+       console.log(ev);
+       carElement.classList.add("carousel");
+       });
+   </script>
         
        
 </body>

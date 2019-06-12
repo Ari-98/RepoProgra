@@ -10,8 +10,9 @@
     <title>My Bootstrap  Project</title>
 </head>
 <body>
+
         <nav class="navbar navbar-expand-md navbar-dark" style="background-color:darkviolet">
-                <a href="#" class="navbar-brand features"> <i class="fas fa-warehouse"></i></a>
+                <a href="#" class="navbar-brand">         <i class="fas fa-building"></i></a>
 
                <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
                    <span class="navbar-toggler-icon"></span>
@@ -19,10 +20,10 @@
                <!-- div>div.navbar-bar>a.nav-item.nav-link*4 -->
                 <div class="collapse navbar-collapse" id="menu" > 
                     <div class="navbar-nav ml-auto" >
-                        <a href="index.html" class="nav-item nav-link"  > Home</a>
-                        <a href="products.html" class="nav-item nav-link active"> Products</a>
-                        <a href="about.html" class="nav-item nav-link">About Lis</a>
-                        <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                        <a href="index.html" class="nav-item nav-link active"  > Home |</a>
+                        <a href="products.html" class="nav-item nav-link"> Products |</a>
+                        <a href="about.html" class="nav-item nav-link">About Us |</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact Lis</a>
                         <input placeholder="Search Text..." type="search">
                         <button type="button" class="btn btn-primary btn-md">Search!</button>
                         </span>
@@ -31,91 +32,155 @@
                
             </nav>
             <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">Products</li>
-                    </ol>
-                  </nav>
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active"><a href="products.html">Product</a></li>
+              </ol>
+            </nav>
+    
     <div class="container">
-           
-        <div class="col-md-8">
-            <br>
-            <div>
-                <h2>Product One. We build amazing stuff</h2>
-            <br>
-            <hr>
+        <div class="row features">
+            <div class="col-md-8">
+                <h5>Product One</h5>
+                 <p class="text-justify">This is an awesome product one description.</p>
             </div>
-            <div class="row features">
-            <div class="col-md-6">
-                <h3>Product One</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, error.</p>
-                <br>
-             <div class="col-md-6">
-                <button type="button" class="btn btn-primary btn-lg">Buy Now!</button>
-            <button type="button" class="btn btn-secondary btn-lg">Free Trial</button>
-             </div>   
+            <div class="col-md-4 col-12 align-self-center">
+                <div class="container" style="height: 10px;">
+                  <button type="button" class="btn btn-primary btn-lg">Buy Now!</button>
+                  <button type="button" class="btn btn-secondary btn-lg">Free Trial</button>
+                </div>
             </div>
         </div>
-            
-        </div>
-
-
-        <div class="row">
-            <div class="offset-1 col-md-4 col-10 offset-md-0 text-center">
-            <div class="card" style="width: 16rem;">
-                <img src="img/produ1.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Producto 1</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="product1.html" class="btn btn-primary">Seguir leyendo</a>
-                </div>
-              </div>
-            </div>
-            
-            <div class="col-md-4 col-6 text-center">
-              <div class="card" style="width: 15rem;">
-                <img src="img/produ2.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Producto 2</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="product2.html" class="btn btn-primary">Seguir leyendo</a>
-                </div>
-              </div>
-            </div>
-              <div class="col-md-4 col-6 text-center">
-              <div class="card" style="width: 16rem;">
-                <img src="img/produ3.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Producto 3</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Seguir leyendo</a>
-                </div>
-              </div>
-            </div>
-    
-        </div>
+      
+        <br>
         <br>
         <hr>
-        <hr>
-       <h4 class="text-center">¿Quieres ponerte en contacto? Envíenos un correo electrónico a office@awesomeproduct.com.</h4>
-        <hr>
-        <br>
-        <div class="footer">
-                <div class="col-md-12 col-sm-4 col-6 text-center">
-                <a href="#"><i class="fab fa-facebook"></i></a></li>
-                <a href="#"><i class="fab fa-twitter-square"></i></a>
-                <a href="#"><i class="fab fa-invision"></i></a>
-            </div>
+        <div class="row features">
+          <div class="carousel slide  col-12" data-ride="carousel" id="mycarousel">
+              <ol class="carousel-indicators">
+                      <li data-target="#mycarousel" data-slide-to="0"></li>
+                      <li data-target="#mycarousel" data-slide-to="1"></li>
+                      <li data-target="#mycarousel" data-slide-to="2"></li>
+                  </ol>
+          <div class="carousel-inner">
+                  <div class="carousel-item active">
+                          <img src="img/123.jpeg" width="1100px" height="350px" alt="" class="d-block">
+                          <div class="carousel-caption d-none d-md-block">
+                              <h5>First Slide</h5>
+                              <p>Lorem ipsum dolor sit amet.</p>
+                          </div>
+                      </div>
 
-        <p class="text-center">(c) Copyright 2013 Product Name. All rights reserved.</p>
+                      <div class="carousel-item">
+                        <img src="img/crea.jpg" width="1100px" height="350px" alt="" class="d-block">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First Slide</h5>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                      <img src="img/12.jpg" width="1100px" height="350px" alt="" class="d-block">
+                      <div class="carousel-caption d-none d-md-block">
+                          <h5>First Slide</h5>
+                          <p>Lorem ipsum dolor sit amet.</p>
+                      </div>
+                  </div>
+                  
+                  
+      </div>
+      <a href="#mycarousel" class="carousel-control-prev" data-slide="prev">
+          <i class="fas fa-arrow-circle-left"></i>
+          </a>
+          <a href="#mycarousel" class="carousel-control-next" data-slide="next">
+              <i class="fas fa-arrow-circle-right"></i>
+              </a>
+
+              
+      </div>
+      
+      
+  </div>
+
+<hr>
+<div class="row features">
+    <div class="col-md-6 text-justify">
+      <h2>Product Q&A</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi rem cumque voluptas, deserunt, dolore maxime praesentium aspernatur optio amet, commodi ad debitis molestiae necessitatibus cum eum culpa! Quia temporibus aspernatur perspiciatis repudiandae laborum maxime nam unde, vero deserunt esse repellat officiis quis veritatis, quam, blanditiis cumque enim quidem eum nisi?</p>
+  </div>
+  <div class="offset-0 offset-md-1 col-md-4 align-self-center"> 
+      <h2>Product Testimonials</h2>
+      <blockquote class="blockquote text-justify">
+          <p class="mb-0">Lorem ipsum dolor ndus commodi accusamus, numquam ex maxime natus possimus cupiditate!</p>
+          <footer class="blockquote-footer">
+              source <cite title="Source Title"> Source Title
+              </cite>
+          </footer>
+      </blockquote>
+  </div>
+  </div>
 
 
-        </div>
-       
-    
-        </div>
-        
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-        <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+
+<div class="row features">
+    <div class="carousel slide" data-ride="carousel" id="mycar">
+        <ol class="carousel-indicators">
+                <li data-target="#mycar" data-slide-to="0"></li>
+                <li data-target="#mycar" data-slide-to="1"></li>
+                <li data-target="#mycar" data-slide-to="2"></li>
+            </ol>
+    <div class="carousel-inner">
+            <div class="carousel-item active">
+                    <img src="img/space-wallpaper-1.jpg" alt="" class="d-block col-md-12">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First Slide</h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+
+            <div class="carousel-item">
+                    <h5>Testimonials</h5>
+                    <blockquote class="blockquote text-center">
+                <p class="mb-0">Lorem ipsum dolor ndus commodi accusamus, numquam ex maxime natus possimus cupiditate!</p>
+                <footer class="blockquote-footer">
+                    Someone famous in <cite title="Source Title"> Source Title
+                    </cite>
+                </footer>
+            </blockquote>
+
+    </div>
+</div>
+
+<a href="#mycar" class="carousel-control-prev" data-slide="prev">
+    <i class="fas fa-arrow-circle-left"></i>
+    </a>
+    <a href="#mycar" class="carousel-control-next" data-slide="next">
+        <i class="fas fa-arrow-circle-right"></i>
+        </a>
+</div>
+</div>
+
+
+<hr>
+<h4 class="text-center">¿Quieres ponerte en contacto? Envíenos un correo electrónico a office@awesomeproduct.com.</h4>
+<hr>
+<br>
+<div class="footer">
+        <div class="col-md-12 col-12 text-center">
+        <a href="#"><i class="fab fa-facebook"></i></a></li>
+        <a href="#"><i class="fab fa-twitter-square"></i></a>
+        <a href="#"><i class="fab fa-invision"></i></a>
+    </div>
+
+<p class="text-center">(c) Copyright 2013 Product Name. All rights reserved.</p>
+
+
+<hr>
+
+</div>
+</div>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 </body>
 </html>
